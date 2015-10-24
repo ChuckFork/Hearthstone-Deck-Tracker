@@ -328,12 +328,12 @@
                             </Rectangle.Fill>
                         </Rectangle>
                     </MenuItem.Icon>
-                    <MenuItem Name="MenuItemExportToHs" Header="TO _HEARTHSTONE" Click="BtnExport_Click" />
-                    <MenuItem Header="TO HEARTHSTONE FROM _WEB" Click="BtnExportFromWeb_Click" ToolTip="This does not save the deck." />
-                    <MenuItem Name="MenuItemExportXml" Header="SAVE AS _XML" Click="BtnSaveToFile_OnClick" />
-                    <MenuItem Name="MenuItemExportIds" Header="COPY IDS TO _CLIPBOARD" Click="BtnClipboard_OnClick" />
-                    <MenuItem Name="MenuItemExportNames" Header="COPY _NAMES TO CLIPBOARD" Click="BtnClipboardNames_OnClick" />
-                    <MenuItem Name="MenuItemExportScreenshot" Header="_SCREENSHOT" Click="BtnScreenhot_Click" />
+                    <MenuItem Name="MenuItemExportToHs" Header="到炉石传说" Click="BtnExport_Click" />
+                    <MenuItem Header="从网络到炉石传说" Click="BtnExportFromWeb_Click" ToolTip="This does not save the deck." />
+                    <MenuItem Name="MenuItemExportXml" Header="保存为Xml文件" Click="BtnSaveToFile_OnClick" />
+                    <MenuItem Name="MenuItemExportIds" Header="复制ID到剪贴板" Click="BtnClipboard_OnClick" />
+                    <MenuItem Name="MenuItemExportNames" Header="复制卡牌名到剪贴板" Click="BtnClipboardNames_OnClick" />
+                    <MenuItem Name="MenuItemExportScreenshot" Header="截图分享" Click="BtnScreenhot_Click" />
                 </MenuItem>
                 <MenuItem Header="数据">
                     <MenuItem.Icon>
