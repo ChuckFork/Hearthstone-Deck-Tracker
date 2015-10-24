@@ -176,12 +176,12 @@ namespace Hearthstone_Deck_Tracker
 			if(BorderMechanics.Visibility != Visibility.Visible)
 			{
 				BorderMechanics.Visibility = Visibility.Visible;
-				TextBlockManaCurveMechanics.Text = "HIDE";
+				TextBlockManaCurveMechanics.Text = "隐藏";
 			}
 			else
 			{
 				BorderMechanics.Visibility = Visibility.Collapsed;
-				TextBlockManaCurveMechanics.Text = "MECHANICS";
+				TextBlockManaCurveMechanics.Text = "卡牌构成";
 			}
 			TextBlockNoMechanics.Visibility = _deck != null && _deck.Mechanics.Any() ? Visibility.Collapsed : Visibility.Visible;
 		}
