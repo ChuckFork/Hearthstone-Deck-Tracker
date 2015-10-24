@@ -284,13 +284,13 @@
                             </Rectangle.Fill>
                         </Rectangle>
                     </MenuItem.Icon>
-                    <MenuItem Header="FROM _WEB" Click="BtnWeb_Click" />
-                    <MenuItem Header="FROM GAME: _ARENA" Click="BtnArena_Click" Name="MenuItemImportArena" ToolTip="Instructions can be found in options > importing"/>
-                    <MenuItem Header="FROM GAME: _CONSTRUCTED (BETA)" Click="BtnConstructed_Click" Name="MenuItemImportConstructed" ToolTip="Instructions can be found in options > importing" />
-                    <MenuItem Header="FROM _FILE" Click="BtnFile_Click" />
-                    <MenuItem Header="FROM _ID STRING" Click="BtnIdString_Click" />
-                    <MenuItem Header="FROM CLIPBOARD: _CARD NAMES" Click="BtnClipboardText_Click" />
-                    <MenuItem Header="FROM LAST _GAME" Click="BtnLastGame_Click" />
+                    <MenuItem Header="从网络" Click="BtnWeb_Click" />
+                    <MenuItem Header="从游戏:竞技场" Click="BtnArena_Click" Name="MenuItemImportArena" ToolTip="Instructions can be found in options > importing"/>
+                    <MenuItem Header="从游戏: 卡组制作(测试)" Click="BtnConstructed_Click" Name="MenuItemImportConstructed" ToolTip="Instructions can be found in options > importing" />
+                    <MenuItem Header="从文件" Click="BtnFile_Click" />
+                    <MenuItem Header="从ID字符串" Click="BtnIdString_Click" />
+                    <MenuItem Header="从剪贴板:卡排名" Click="BtnClipboardText_Click" />
+                    <MenuItem Header="从上一场游戏" Click="BtnLastGame_Click" />
                 </MenuItem>
                 <MenuItem Header="导出" Name="MenuItemExport">
                     <MenuItem.Icon>
