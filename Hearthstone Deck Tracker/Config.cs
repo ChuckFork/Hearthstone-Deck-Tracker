@@ -39,8 +39,8 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue(true)]
 		public bool ArenaRewardDialog = true;
 
-		[DefaultValue(false)]
-		public bool AlwaysShowGoldProgress = false;
+		[DefaultValue(true)]
+		public bool AlwaysShowGoldProgress = true;
 
 		[DefaultValue(DisplayedTimeFrame.AllTime)]
 		public DisplayedTimeFrame ArenaStatsTimeFrameFilter = DisplayedTimeFrame.AllTime;
@@ -670,8 +670,8 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue(DeckType.All)]
 		public DeckType SelectedDeckType = DeckType.All;
 
-		[DefaultValue("enUS")]
-		public string SelectedLanguage = "enUS";
+		[DefaultValue("zhCN")]
+		public string SelectedLanguage = "zhCN";
 
 		[XmlArray(ElementName = "AlternativeLanguages")]
 		[XmlArrayItem(ElementName = "Language")]
@@ -727,11 +727,11 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue(false)]
 		public bool ShowInTaskbar = false;
 
-		[DefaultValue(false)]
+        [DefaultValue(false)]
 		public bool ShowLastPlayedDateOnDeck = false;
-		
-		[DefaultValue(true)]
-		public bool ShowLoginDialog = true;
+        
+		[DefaultValue(false)]
+		public bool ShowLoginDialog = false;
 
 		[DefaultValue(true)]
 		public bool ShowSplashScreen = true;
