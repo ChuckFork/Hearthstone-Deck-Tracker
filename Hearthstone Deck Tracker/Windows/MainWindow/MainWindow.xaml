@@ -52,7 +52,7 @@
                             <VisualBrush Visual="{StaticResource appbar_settings}" />
                         </Rectangle.Fill>
                     </Rectangle>
-                    <TextBlock Margin="4" VerticalAlignment="Center" Text="options" />
+                    <TextBlock Margin="4" VerticalAlignment="Center" Text="设置" />
                 </StackPanel>
             </Button>
             <Button Click="BtnHelp_OnClick">
@@ -62,7 +62,7 @@
                             <VisualBrush Visual="{StaticResource appbar_question}" />
                         </Rectangle.Fill>
                     </Rectangle>
-                    <TextBlock Margin="4" VerticalAlignment="Center" Text="help" />
+                    <TextBlock Margin="4" VerticalAlignment="Center" Text="帮助" />
                 </StackPanel>
             </Button>
             <Button Name="BtnDonate" Click="BtnDonate_OnClick">
@@ -72,7 +72,7 @@
                             <VisualBrush Visual="{StaticResource appbar_heart}" />
                         </Rectangle.Fill>
                     </Rectangle>
-                    <TextBlock Margin="4" VerticalAlignment="Center" Text="donate" />
+                    <TextBlock Margin="4" VerticalAlignment="Center" Text="捐赠" />
                 </StackPanel>
                 <Button.ContextMenu>
                     <ContextMenu Name="BtnDonateContextMenu">
@@ -185,7 +185,7 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <Menu Grid.Row="1" Grid.ColumnSpan="3">
-                <MenuItem Header="_MAIN">
+                <MenuItem Header="主界面">
                     <MenuItem.Icon>
                         <Rectangle Width="16" Height="16" Margin="0,0,-10,0">
                             <Rectangle.Fill>
@@ -215,7 +215,7 @@
                     <Separator />
                     <MenuItem Header="E_XIT" Click="MenuItemExit_OnClick"/>
                 </MenuItem>
-                <MenuItem Header="_NEW">
+                <MenuItem Header="新建">
                     <MenuItem.Icon>
                         <Rectangle Width="16" Height="16" Margin="0,0,-10,0">
                             <Rectangle.Fill>
@@ -269,7 +269,7 @@
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="_DECK" Name="MenuItemEdit">
+                <MenuItem Header="卡组" Name="MenuItemEdit">
                     <MenuItem.Icon>
                         <Rectangle Width="16" Height="16" Margin="0,0,-10,0">
                             <Rectangle.Fill>
@@ -304,7 +304,7 @@
                         <MenuItem Header="SELECTED VERSION" Click="BtnCloneSelectedVersion_Click" />
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="_IMPORT">
+                <MenuItem Header="导入">
                     <MenuItem.Icon>
                         <Rectangle Width="16" Height="16"  Margin="0,0,-10,0">
                             <Rectangle.Fill>
@@ -320,7 +320,7 @@
                     <MenuItem Header="FROM CLIPBOARD: _CARD NAMES" Click="BtnClipboardText_Click" />
                     <MenuItem Header="FROM LAST _GAME" Click="BtnLastGame_Click" />
                 </MenuItem>
-                <MenuItem Header="E_XPORT" Name="MenuItemExport">
+                <MenuItem Header="导出" Name="MenuItemExport">
                     <MenuItem.Icon>
                         <Rectangle Width="16" Height="16" Margin="0,0,-10,0">
                             <Rectangle.Fill>
@@ -335,7 +335,7 @@
                     <MenuItem Name="MenuItemExportNames" Header="COPY _NAMES TO CLIPBOARD" Click="BtnClipboardNames_OnClick" />
                     <MenuItem Name="MenuItemExportScreenshot" Header="_SCREENSHOT" Click="BtnScreenhot_Click" />
                 </MenuItem>
-                <MenuItem Header="_STATS">
+                <MenuItem Header="数据">
                     <MenuItem.Icon>
                         <Rectangle Width="16" Height="16" Margin="0,0,-10,0">
                             <Rectangle.Fill>
@@ -376,7 +376,7 @@
                 </MenuItem>
                 <!--<MenuItem Header="MENUITEM">
                 </MenuItem>-->
-                <MenuItem Header="_PLUGINS" Name="MenuItemPlugins">
+                <MenuItem Header="插件" Name="MenuItemPlugins">
                     <MenuItem.Icon>
                         <Rectangle Width="16" Height="16" Margin="0,0,-10,0">
                             <Rectangle.Fill>
@@ -396,7 +396,7 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Button Name="BtnStartHearthstone" Click="BtnStartHearthstone_Click" Margin="10,6,10,-4" Grid.Row="0" Visibility="Visible" Style="{StaticResource AccentedSquareButtonStyle}">
-                    <TextBlock Name="TextBlockBtnStartHearthstone" Text="START LAUNCHER / HEARTHSTONE" />
+                    <TextBlock Name="TextBlockBtnStartHearthstone" Text="启动 战网/炉石传说" />
                 </Button>
                 <Border Name="PanelVersionComboBox" BorderThickness="1" BorderBrush="{DynamicResource TextBrush}" Margin="10,6,10,-4" Grid.Row="1" Visibility="Collapsed">
                     <DockPanel>
@@ -651,7 +651,7 @@
                         </Grid>
                     </ItemsPanelTemplate>
                 </StatusBar.ItemsPanel>
-                <StatusBarItem Content="NEWS:" Grid.Column="0"/>
+                <StatusBarItem Content="新闻:" Grid.Column="0"/>
                 <StatusBarItem Name="StatusBarItemNewsIndex" Content="(0/0)" Grid.Column="1"/>
                 <StatusBarItem Grid.Column="2">
                     <controls:TransitioningContentControl Name="NewsContentControl" Transition="Right"/>

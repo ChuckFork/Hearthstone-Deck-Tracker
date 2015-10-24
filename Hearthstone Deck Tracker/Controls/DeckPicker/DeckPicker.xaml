@@ -84,13 +84,13 @@
     <Border BorderThickness="1" DockPanel.Dock="Bottom" Margin="0,2,0,0" BorderBrush="{DynamicResource TextBrush}"
             PreviewMouseDown="ActiveDeckPanel_OnPreviewMouseDown" Height="26">
         <DockPanel>
-            <TextBlock Name="TextBlockLabelActiveDeck" Text="ACTIVE DECK: " FontWeight="SemiBold" FontSize="14"
+            <TextBlock Name="TextBlockLabelActiveDeck" Text="当前卡组: " FontWeight="SemiBold" FontSize="14"
                        VerticalAlignment="Center" Margin="5,0,0,0" DockPanel.Dock="Left" />
             <Image
                 Source="{Binding ActiveDeck.ClassImage, RelativeSource={RelativeSource AncestorType=deckPicker:DeckPicker}}"
                 DockPanel.Dock="Left" Margin="5,1" RenderOptions.BitmapScalingMode="Fant" />
             <Grid Margin="0,0,5,0">
-                <TextBlock Text="NONE   -   CLICK &quot;USE&quot; ON DECK TO ACTIVATE" FontSize="14" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"
+                <TextBlock Text="无   -   点击卡组旁的 &quot;使用&quot; 来启用" FontSize="14" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"
                            HorizontalAlignment="Left" Visibility="{Binding VisibilityNoDeck, RelativeSource={RelativeSource AncestorType=deckPicker:DeckPicker}}"/>
                 <DockPanel>
                     <DockPanel.Resources>

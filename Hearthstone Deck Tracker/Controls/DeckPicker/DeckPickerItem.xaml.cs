@@ -55,7 +55,7 @@ namespace Hearthstone_Deck_Tracker.Controls.DeckPicker
 
 		public string TextUseButton
 		{
-			get { return Deck.Equals(DeckList.Instance.ActiveDeck) ? "ACTIVE" : "USE"; }
+			get { return Deck.Equals(DeckList.Instance.ActiveDeck) ? "正在使用" : "使用"; }
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
