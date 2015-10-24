@@ -343,12 +343,13 @@
                             </Rectangle.Fill>
                         </Rectangle>
                     </MenuItem.Icon>
+                    <MenuItem Header="游戏 &amp; 数据统计"  Click="BtnDeckStats_Click"/>
                     <MenuItem Header="[OLD] GAMES &amp; _STATISTICS"  Click="BtnDeckStats_Click"/>
                     <MenuItem Header="ARENA RUNS &amp; _STATISTICS"  Click="BtnDeckNewStats_Click"/>
                     <Separator/>
-                    <MenuItem Header="_LATEST REPLAY" Click="MenuItemReplayLastGame_OnClick"/>
-                    <MenuItem Header="_SELECT REPLAY" Click="MenuItemReplaySelectGame_OnClick" />
-                    <MenuItem Header="LOAD REPLAY FROM _FILE" Click="MenuItemReplayFromFile_OnClick"/>
+                    <MenuItem Header="回放上一场对战" Click="MenuItemReplayLastGame_OnClick"/>
+                    <MenuItem Header="回放指定的对战" Click="MenuItemReplaySelectGame_OnClick" />
+                    <MenuItem Header="从文件加载对战回放" Click="MenuItemReplayFromFile_OnClick"/>
                 </MenuItem>
                 <MenuItem Header="_HEARTHSTATS">
                     <MenuItem.Icon>
