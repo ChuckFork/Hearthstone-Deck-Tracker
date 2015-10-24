@@ -193,14 +193,14 @@
                             </Rectangle.Fill>
                         </Rectangle>
                     </MenuItem.Icon>
-                    <MenuItem Header="USE _NO DECK" Click="ButtonNoDeck_Click" />
-                    <CheckBox x:Name="CheckboxDeckDetection" Margin="-24,0,0,0" Content="AUTO DECK SELECTION"
+                    <MenuItem Header="未使用现成卡组" Click="ButtonNoDeck_Click" />
+                    <CheckBox x:Name="CheckboxDeckDetection" Margin="-24,0,0,0" Content="自动选择卡组"
                               FontSize="14"
                               Checked="CheckboxDeckDetection_Checked"
                               Unchecked="CheckboxDeckDetection_Unchecked" />
                     <Separator />
-                    <MenuItem Header="_SORT / FILTER" Click="BtnSortFilter_Click" />
-                    <MenuItem Name="MenuItemQuickSelectFilter" Header="_QUICK FILTER">
+                    <MenuItem Header="分类/过滤" Click="BtnSortFilter_Click" />
+                    <MenuItem Name="MenuItemQuickSelectFilter" Header="快速过滤">
                         <MenuItem.ItemTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding}" PreviewMouseDown="MenuItemQuickFilter_Click" />
@@ -208,12 +208,12 @@
                         </MenuItem.ItemTemplate>
                     </MenuItem>
                     <Separator />
-                    <CheckBox x:Name="CheckboxClassCardsFirst" Margin="-24,0,0,0" Content="CLASS CARDS FIRST"
+                    <CheckBox x:Name="CheckboxClassCardsFirst" Margin="-24,0,0,0" Content="优先职业卡牌"
                               FontSize="14"
                               Checked="CheckboxClassCardsFirst_Checked"
                               Unchecked="CheckboxClassCardsFirst_Unchecked" />
                     <Separator />
-                    <MenuItem Header="E_XIT" Click="MenuItemExit_OnClick"/>
+                    <MenuItem Header="退出" Click="MenuItemExit_OnClick"/>
                 </MenuItem>
                 <MenuItem Header="新建">
                     <MenuItem.Icon>
