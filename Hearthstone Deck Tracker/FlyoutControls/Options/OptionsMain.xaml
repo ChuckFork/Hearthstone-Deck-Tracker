@@ -8,25 +8,25 @@
     <DockPanel>
         <Border Margin="5,5,0,5" BorderThickness="1" BorderBrush="{DynamicResource AccentColorBrush}">
             <TreeView Name="TreeViewOptions" Width="150">
-                <TreeViewItem Header="Overlay">
-                    <TreeViewItem Name="TreeViewItemOverlayGeneral" Header="General" Selected="TreeViewItemGeneralOverlay_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemOverlayDeckWindows" Header="Deck Windows" Selected="TreeViewItemOverlayDeckWindows_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemOverlayPlayer" Header="Player" Selected="TreeViewItemOverlayPlayer_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemOverlayOpponent" Header="Opponent" Selected="TreeViewItemOverlayOpponent_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemOverlayInteractivity" Header="Interactivity" Selected="TreeViewItemOverlayInteractivity_OnSelected"/>
+                <TreeViewItem Header="覆盖层">
+                    <TreeViewItem Name="TreeViewItemOverlayGeneral" Header="常规" Selected="TreeViewItemGeneralOverlay_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemOverlayDeckWindows" Header="卡组窗口" Selected="TreeViewItemOverlayDeckWindows_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemOverlayPlayer" Header="玩家" Selected="TreeViewItemOverlayPlayer_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemOverlayOpponent" Header="对手" Selected="TreeViewItemOverlayOpponent_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemOverlayInteractivity" Header="交互" Selected="TreeViewItemOverlayInteractivity_OnSelected"/>
                 </TreeViewItem>
-                <TreeViewItem Header="Tracker">
-                    <TreeViewItem Name="TreeViewItemTrackerGeneral" Header="General" Selected="TreeViewItemTrackerGeneral_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemTrackerStats" Header="Stats" Selected="TreeViewItemTrackerStats_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemTrackerExporting" Header="Exporting" Selected="TreeViewItemTrackerExporting_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemTrackerImporting" Header="Importing" Selected="TreeViewItemTrackerImporting_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemTrackerPlugins" Header="Plugins" Selected="TreeViewItemTrackerPlugins_OnSelected"/>
+                <TreeViewItem Header="记牌器">
+                    <TreeViewItem Name="TreeViewItemTrackerGeneral" Header="常规" Selected="TreeViewItemTrackerGeneral_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerStats" Header="统计" Selected="TreeViewItemTrackerStats_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerExporting" Header="导出" Selected="TreeViewItemTrackerExporting_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerImporting" Header="导入" Selected="TreeViewItemTrackerImporting_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerPlugins" Header="插件" Selected="TreeViewItemTrackerPlugins_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerHotKeys" Header="Hotkeys" Selected="TreeViewItemTrackerHotKeys_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerNotifications" Header="Notifications" Selected="TreeViewItemTrackerNotifications_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemTrackerAppearance" Header="Appearance" Selected="TreeViewItemTrackerAppearance_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemTrackerSettings" Header="Settings" Selected="TreeViewItemTrackerSettings_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerAppearance" Header="外观" Selected="TreeViewItemTrackerAppearance_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerSettings" Header="设置" Selected="TreeViewItemTrackerSettings_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerLogging" Header="Logging" Selected="TreeViewItemTrackerLogging_OnSelected" Visibility="Collapsed"/>
-                    <TreeViewItem Name="TreeViewItemTrackerBackups" Header="Backups" Selected="TreeViewItemTrackerBackups_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerBackups" Header="备份" Selected="TreeViewItemTrackerBackups_OnSelected"/>
                 </TreeViewItem>
             </TreeView>
             </Border>
