@@ -344,7 +344,7 @@
                         </Rectangle>
                     </MenuItem.Icon>
                     <MenuItem Header="[旧] 游戏 &amp; 数据统计"  Click="BtnDeckStats_Click"/>
-                    <MenuItem Header="ARENA RUNS &amp; _STATISTICS"  Click="BtnDeckNewStats_Click"/>
+                    <MenuItem Header="竞技场记录 &amp; 数据统计"  Click="BtnDeckNewStats_Click"/>
                     <Separator/>
                     <MenuItem Header="回放上一场对战" Click="MenuItemReplayLastGame_OnClick"/>
                     <MenuItem Header="回放指定的对战" Click="MenuItemReplaySelectGame_OnClick" />
