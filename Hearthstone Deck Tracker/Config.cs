@@ -322,8 +322,8 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue(false)]
 		public bool HideDecksInOverlay = false;
 
-		[DefaultValue(false)]
-		public bool HideDrawChances = false;
+		[DefaultValue(true)]
+		public bool HideDrawChances = true;
 
 		[DefaultValue(false)]
 		public bool HideInBackground = false;
@@ -331,8 +331,8 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue(false)]
 		public bool HideInMenu = false;
 
-		[DefaultValue(true)]
-		public bool HideOpponentAttackIcon = true;
+		[DefaultValue(false)]
+		public bool HideOpponentAttackIcon = false;
 
 		[DefaultValue(false)]
 		public bool HideOpponentCardAge = false;
@@ -346,8 +346,8 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue(false)]
 		public bool HideOpponentCards = false;
 
-		[DefaultValue(false)]
-		public bool HideOpponentDrawChances = false;
+		[DefaultValue(true)]
+		public bool HideOpponentDrawChances = true;
 
 		[DefaultValue(false)]
 		public bool HideOpponentFatigueCount = false;
@@ -358,8 +358,8 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue(false)]
 		public bool HideOverlayInSpectator = false;
 
-		[DefaultValue(true)]
-		public bool HidePlayerAttackIcon = true;
+		[DefaultValue(false)]
+		public bool HidePlayerAttackIcon = false;
 
 		[DefaultValue(false)]
 		public bool HidePlayerCardCount = false;
