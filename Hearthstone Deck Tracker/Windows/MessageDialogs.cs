@@ -118,11 +118,11 @@ namespace Hearthstone_Deck_Tracker.Windows
 
 		public static async Task ShowHsNotInstalledMessage(this MetroWindow window)
 		{
-			var settings = new Settings {AffirmativeButtonText = "Ok", NegativeButtonText = "Select manually"};
+			var settings = new Settings {AffirmativeButtonText = "了解", NegativeButtonText = "手动选择游戏路径"};
 			var result =
 				await
-				window.ShowMessageAsync("Hearthstone install directory not found",
-				                        "Hearthstone Deck Tracker will not work properly if Hearthstone is not installed on your machine (obviously).",
+                window.ShowMessageAsync("没有找到炉石传说的安装路径",
+                                        "如果你的电脑上没有安装炉石传说，那么记牌器将无法正常工作",
 				                        MessageDialogStyle.AffirmativeAndNegative, settings);
 			if(result == MessageDialogResult.Negative)
 			{
@@ -138,7 +138,7 @@ namespace Hearthstone_Deck_Tracker.Windows
 				{
 					Config.Instance.HearthstoneDirectory = Path.GetDirectoryName(dialog.FileName);
 					Config.Save();
-					Core.MainWindow.ShowMessage("Restart required.", "Please restart HDT for this to take effect.");
+					Core.MainWindow.ShowMessage("需要重启HDT软件", "为了使设置游戏路径生效，请重启HDT软件");
 				}
 			}
 		}
