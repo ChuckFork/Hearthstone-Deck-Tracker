@@ -21,7 +21,7 @@
                     <TreeViewItem Name="TreeViewItemTrackerExporting" Header="导出" Selected="TreeViewItemTrackerExporting_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerImporting" Header="导入" Selected="TreeViewItemTrackerImporting_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerPlugins" Header="插件" Selected="TreeViewItemTrackerPlugins_OnSelected"/>
-                    <TreeViewItem Name="TreeViewItemTrackerHotKeys" Header="Hotkeys" Selected="TreeViewItemTrackerHotKeys_OnSelected"/>
+                    <TreeViewItem Name="TreeViewItemTrackerHotKeys" Header="快捷键" Selected="TreeViewItemTrackerHotKeys_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerAppearance" Header="外观" Selected="TreeViewItemTrackerAppearance_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerSettings" Header="设置" Selected="TreeViewItemTrackerSettings_OnSelected"/>
                     <TreeViewItem Name="TreeViewItemTrackerLogging" Header="Logging" Selected="TreeViewItemTrackerLogging_OnSelected" Visibility="Collapsed"/>
