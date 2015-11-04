@@ -102,8 +102,8 @@ namespace Hearthstone_Deck_Tracker
 		[DefaultValue("Arena {Date dd-MM hh:mm}")]
 		public string ArenaDeckNameTemplate = "Arena {Date dd-MM hh:mm}";
 
-		[DefaultValue(false)]
-		public bool BringHsToForeground = false;
+		[DefaultValue(true)]
+		public bool BringHsToForeground = true;
 
 		[DefaultValue(false)]
 		public bool CardSortingClassFirst = false;
