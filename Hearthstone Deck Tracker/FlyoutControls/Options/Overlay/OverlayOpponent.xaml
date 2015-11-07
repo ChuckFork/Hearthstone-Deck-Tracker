@@ -12,19 +12,19 @@
             <ScrollViewer VerticalScrollBarVisibility="Auto">
                 <StackPanel>
                     <CheckBox x:Name="CheckboxSameScaling"
-                                  Content="Use same scaling for player/opponent" HorizontalAlignment="Left"
+                                  Content="玩家和对手使用相同的比例尺" HorizontalAlignment="Left"
                                   Margin="10,5,0,0" VerticalAlignment="Top" IsChecked="True"
                                   Checked="CheckboxSameScaling_Checked"
                                   Unchecked="CheckboxSameScaling_Unchecked" />
                     <DockPanel Margin="10,5,10,0">
-                        <Label Content="Scaling:" />
+                        <Label Content="比例尺:" />
                         <TextBox Name="TextBoxScaling" PreviewTextInput="TextBoxScaling_OnPreviewTextInput" Text="{Binding OpponentScaling, RelativeSource={RelativeSource AncestorType=overlay:OverlayOpponent}}" DockPanel.Dock="Right" Margin="5,0,0,0" Width="50"/>
                         <Slider x:Name="SliderOverlayOpponentScaling" HorizontalAlignment="Right"
                                             VerticalAlignment="Center" Width="150" Value="{Binding OpponentScaling, RelativeSource={RelativeSource AncestorType=overlay:OverlayOpponent}}"
                                             Minimum="1" SmallChange="1" LargeChange="10" Maximum="200" />
                     </DockPanel>
                     <DockPanel Margin="10,5,10,0">
-                        <Label Content="Opacity:" HorizontalAlignment="Left"
+                        <Label Content="不透明度:" HorizontalAlignment="Left"
                                            VerticalAlignment="Top" />
                         <Slider x:Name="SliderOpponentOpacity" HorizontalAlignment="Right"
                                             VerticalAlignment="Center" Width="205" Value="100"
@@ -32,14 +32,14 @@
 
                     </DockPanel>
                     <DockPanel Margin="10,5,10,0">
-                        <Label Content="Secret scaling:" />
+                        <Label Content="奥秘的比例尺:" />
                         <TextBox Name="TextBoxSecretScaling" PreviewTextInput="TextBoxScaling_OnPreviewTextInput" Text="{Binding SecretScaling, RelativeSource={RelativeSource AncestorType=overlay:OverlayOpponent}}" DockPanel.Dock="Right" Margin="5,0,0,0" Width="50"/>
                         <Slider x:Name="SliderOverlaySecretScaling" HorizontalAlignment="Right"
                                             VerticalAlignment="Center" Width="150" Value="{Binding SecretScaling, RelativeSource={RelativeSource AncestorType=overlay:OverlayOpponent}}"
                                             Minimum="1" SmallChange="1" LargeChange="10" Maximum="200" />
                     </DockPanel>
                     <DockPanel Margin="10,5,10,0">
-                        <Label Content="Secret opacity:" HorizontalAlignment="Left"
+                        <Label Content="奥秘的不透明度:" HorizontalAlignment="Left"
                                            VerticalAlignment="Top" />
                         <Slider x:Name="SliderSecretOpacity" HorizontalAlignment="Right"
                                             VerticalAlignment="Center" Width="205" Value="100"
@@ -47,7 +47,7 @@
 
                     </DockPanel>
                     <CheckBox x:Name="CheckboxHighlightDiscarded"
-                                          Content="Highlight discarded from deck" HorizontalAlignment="Left"
+                                          Content="在卡组中高亮显示丢弃的卡牌(术士或手牌满了之后烧毁的)" HorizontalAlignment="Left"
                                           Margin="10,5,0,10" VerticalAlignment="Top"
                                           Checked="CheckboxHighlightDiscarded_Checked"
                                           Unchecked="CheckboxHighlightDiscarded_Unchecked" />
