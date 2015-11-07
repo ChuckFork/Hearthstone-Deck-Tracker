@@ -7,52 +7,52 @@
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="300">
     <Grid>
-        <GroupBox Header="Deck Windows">
+        <GroupBox Header="卡组窗口">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
                 <StackPanel>
                     <CheckBox x:Name="CheckboxPlayerWindowOpenAutomatically"
-                                              Content="Player" HorizontalAlignment="Left"
+                                              Content="玩家" HorizontalAlignment="Left"
                                               Margin="10,5,0,0" VerticalAlignment="Top"
                                               Checked="CheckboxPlayerWindowOpenAutomatically_Checked"
                                               Unchecked="CheckboxPlayerWindowOpenAutomatically_Unchecked" />
                     <CheckBox x:Name="CheckboxOpponentWindowOpenAutomatically"
-                                              Content="Opponent" HorizontalAlignment="Left"
+                                              Content="对手" HorizontalAlignment="Left"
                                               Margin="10,5,0,0" VerticalAlignment="Top"
                                               Checked="CheckboxOpponentWindowOpenAutomatically_Checked"
                                               Unchecked="CheckboxOpponentWindowOpenAutomatically_Unchecked" />
-                    <CheckBox x:Name="CheckboxWindowsTopmost" Content="Topmost"
+                    <CheckBox x:Name="CheckboxWindowsTopmost" Content="保持最前"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxWindowsTopmost_Checked"
                                           Unchecked="CheckboxWindowsTopmost_Unchecked" />
                 <CheckBox x:Name="CheckboxWinTopmostHsForeground"
-                                          Content="Only if Hearthstone is in foreground" HorizontalAlignment="Left"
+                                          Content="仅在炉石处于前台时" HorizontalAlignment="Left"
                                           Margin="30,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxWinTopmostHsForeground_Checked"
                                           Unchecked="CheckboxWinTopmostHsForeground_Unchecked" />
-                <CheckBox x:Name="CheckboxWindowCardToolTips" Content="Card tooltips"
+                <CheckBox x:Name="CheckboxWindowCardToolTips" Content="卡牌说明"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxWindowCardToolTips_Checked"
                                           Unchecked="CheckboxWindowCardToolTips_Unchecked" />
                 <Separator Margin="0,5,0,0" />
                 <CheckBox x:Name="CheckboxTimerWindow"
-                                          Content="Timer" HorizontalAlignment="Left"
+                                          Content="计时器" HorizontalAlignment="Left"
                                           Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxTimerWindow_Checked"
                                           Unchecked="CheckboxTimerWindow_Unchecked" />
 
 
-                <CheckBox x:Name="CheckboxTimerTopmost" Content="Topmost"
+                <CheckBox x:Name="CheckboxTimerTopmost" Content="计时器保持最前"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxTimerTopmost_Checked"
                                           Unchecked="CheckboxTimerTopmost_Unchecked" />
                 <CheckBox x:Name="CheckboxTimerTopmostHsForeground"
-                                          Content="Only if HS in foreground" HorizontalAlignment="Left"
+                                          Content="仅在炉石处于前台时" HorizontalAlignment="Left"
                                           Margin="30,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxTimerTopmostHsForeground_Checked"
                                           Unchecked="CheckboxTimerTopmostHsForeground_Unchecked" />
                 <Separator Margin="0,5,0,0" />
                 <DockPanel Margin="5,5,5,0">
-                    <Label Content="Background:" HorizontalAlignment="Left"
+                    <Label Content="背景:" HorizontalAlignment="Left"
                                            VerticalAlignment="Top" />
                     <ComboBox x:Name="ComboboxWindowBackground" HorizontalAlignment="Right"
                                               Margin="5,0,0,0" VerticalAlignment="Top" Width="150"
@@ -64,7 +64,7 @@
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Margin="5,5,5,0">
-                    <Label Content="Custom hex:" HorizontalAlignment="Left"
+                    <Label Content="自定义Hex:" HorizontalAlignment="Left"
                                            VerticalAlignment="Top" />
                     <TextBox x:Name="TextboxCustomBackground" HorizontalAlignment="Right"
                                              Height="23" HorizontalContentAlignment="Center" Margin="10,0,0,0"
