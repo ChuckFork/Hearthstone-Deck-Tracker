@@ -10,7 +10,7 @@
                       xmlns:deckPicker="clr-namespace:Hearthstone_Deck_Tracker.Controls.DeckPicker"
                       xmlns:windows="clr-namespace:Hearthstone_Deck_Tracker.Windows"
                       xmlns:stats="clr-namespace:Hearthstone_Deck_Tracker.Controls.Stats"
-                      Title="Hearthstone Deck Tracker" Height="603" Width="700"
+                      Title="Hearthstone Deck Tracker(QQ群414676683)" Height="603" Width="700"
                       MinHeight="584" MinWidth="700"
                       Closing="Window_Closing"
                       Icon="/HearthstoneDeckTracker;component/Images/HearthstoneDeckTracker.ico"
