@@ -6,14 +6,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="300">
     <Grid>
-        <GroupBox Header="General">
+        <GroupBox Header="常规">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
                 <StackPanel>
                     <CheckBox x:Name="CheckBoxAutoUse" Margin="10,5,0,0"  
-                              Content="Automatically &quot;USE&quot; decks. (disables button on decks)" 
+                              Content="自动 &quot;匹配&quot; 卡组 (禁用卡组上的“使用”)" 
                               Checked="CheckBoxAutoUse_OnChecked" Unchecked="CheckBoxAutoUse_OnUnchecked"/>
                     <CheckBox x:Name="CheckboxAutoSelectDeck"
-                                          Content="Autoselect deck if only one possible" HorizontalAlignment="Left"
+                                          Content="自动匹配卡组,如果仅有一个卡组符合" HorizontalAlignment="Left"
                                           Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxAutoSelectDeck_Checked"
                                           Unchecked="CheckboxAutoSelectDeck_Unchecked" />
@@ -22,19 +22,18 @@
                                           Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxSpectatorUseNoDeck_Checked"
                                           Unchecked="CheckboxSpectatorUseNoDeck_Unchecked" />
-                    <CheckBox x:Name="CheckboxFlashHs" Content="Flash Hearthstone on turn start"
-                                          HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
+                    <CheckBox x:Name="CheckboxFlashHs" Content="Flash Hearthstone on turn start"                                          HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxFlashHs_Checked"
                                           Unchecked="CheckboxFlashHs_Unchecked" />
                     <CheckBox x:Name="CheckboxBringHsToForegorund"
-                                          Content="Popup Hearthstone on turn start" HorizontalAlignment="Left"
+                                          Content="回合开始时,将炉石传说切换到前台" HorizontalAlignment="Left"
                                           Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxBringHsToForegorund_Checked"
                                           Unchecked="CheckboxBringHsToForegorund_Unchecked" />
                     <DockPanel Margin="10,5,10,0">
 
                         <CheckBox x:Name="CheckboxTimerAlert"
-                                              Content="Alert at X seconds" HorizontalAlignment="Left" Margin="0,5,0,0" ToolTip="Sound an alert and flash when you have X seconds remaining"
+                                              Content="剩余X秒时报警" HorizontalAlignment="Left" Margin="0,5,0,0" ToolTip="当你剩余X秒时,发出警报并闪动"
                                               VerticalAlignment="Top" Checked="CheckboxTimerAlert_Checked" Unchecked="CheckboxTimerAlert_Unchecked" />
                         <TextBox x:Name="TextboxTimerAlert" 
                                              HorizontalAlignment="Right" Height="23" HorizontalContentAlignment="Center"
@@ -42,53 +41,53 @@
                                              Width="60" TextChanged="TextboxTimerAlert_TextChanged" PreviewTextInput="TextboxTimerAlert_PreviewTextInput"/>
                     </DockPanel>
                     <CheckBox x:Name="CheckboxTurnTime"
-                                          Content="Set turn time to 75s (default 90s) *"
+                                          Content="设置回合时间为75秒(默认90秒) *"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxTurnTime_Checked"
                                           Unchecked="CheckboxTurnTime_Unchecked" />
                     <CheckBox x:Name="CheckboxNoteDialog"
-                                          Content="Show note dialog after game"
+                                          Content="对战结束后显示note对话框"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxNoteDialog_Checked"
                                           Unchecked="CheckboxNoteDialog_Unchecked" />
                     <CheckBox x:Name="CheckboxNoteDialogDelayed"
-                                          Content="Wait until back in menu"
+                                          Content="在回到主菜单前一直显示"
                                           HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxNoteDialogDelay_Checked"
                                           Unchecked="CheckboxNoteDialogDelay_Unchecked" />
                     <CheckBox x:Name="CheckboxArenaRewardDialog"
-                                          Content="Show arena reward dialog when run is over"
+                                          Content="对战结束后显示竞技场的奖励"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxArenaRewardDialog_Checked"
                                           Unchecked="CheckboxArenaRewardDialog_Unchecked" />
                     <Separator Margin="0,5,0,0"/>
-                    <CheckBox x:Name="CheckBoxClassCardsFirst" Margin="10,5,0,0" Content="Card sorting: Class cards first"
+                    <CheckBox x:Name="CheckBoxClassCardsFirst" Margin="10,5,0,0" Content="卡牌排序: 职业卡牌优先"
                               Checked="CheckBoxClassCardsFirst_Checked"
                               Unchecked="CheckBoxClassCardsFirst_Unchecked" />
-                    <CheckBox x:Name="CheckboxTrackerCardToolTips" Content="Card tooltips"
+                    <CheckBox x:Name="CheckboxTrackerCardToolTips" Content="卡牌说明"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxTrackerCardToolTips_Checked"
                                           Unchecked="CheckboxTrackerCardToolTips_Unchecked" />
-                    <CheckBox x:Name="CheckboxCardFrameRarity" Content="Rarity-colored card frames"
+                    <CheckBox x:Name="CheckboxCardFrameRarity" Content="卡牌边框显示稀有度颜色"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxCardFrameRarity_OnChecked"
                                           Unchecked="CheckboxCardFrameRarity_OnUnchecked" />
-                    <CheckBox x:Name="CheckboxCardGemRarity" Content="Rarity-colored card gems"
+                    <CheckBox x:Name="CheckboxCardGemRarity" Content="卡牌宝石显示稀有度颜色"
                                           HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxCardGemRarity_OnChecked"
                                           Unchecked="CheckboxCardGemRarity_OnUnchecked" />
                     <CheckBox x:Name="CheckboxHideManaCurveMyDecks"
-                                              Content="Show Manacurve" HorizontalAlignment="Left"
+                                              Content="显示法力曲线" HorizontalAlignment="Left"
                                               Margin="10,5,0,0" VerticalAlignment="Top"
                                               Checked="CheckboxManaCurveMyDecks_Checked"
                                               Unchecked="CheckboxManaCurveMyDecks_Unchecked" />
                     <CheckBox x:Name="CheckboxFullTextSearch"
-                                          Content="Full text search in New Deck" HorizontalAlignment="Left"
+                                          Content="在新卡组中使用完全匹配搜索" HorizontalAlignment="Left"
                                           Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxFullTextSearch_Checked"
                                           Unchecked="CheckboxFullTextSearch_Unchecked" />
                     <Separator Margin="0,5,0,0"/>
-                    <TextBlock Text="* Neither 75s not 90s are quite correct. The base time is 75s but it's extended to up to ~100s, depending on animations playing." TextWrapping="Wrap" Margin="10,5,10,0" FontStyle="Italic"/>
+                    <TextBlock Text="75秒或90秒不是完全准确的。基准时间是75秒，但它可能达到100秒左右，这取决于具体的对战" TextWrapping="Wrap" Margin="10,5,10,0" FontStyle="Italic"/>
                 </StackPanel>
             </ScrollViewer>
         </GroupBox>
