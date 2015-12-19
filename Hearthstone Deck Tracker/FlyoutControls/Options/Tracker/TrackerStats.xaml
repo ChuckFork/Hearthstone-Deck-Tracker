@@ -119,7 +119,7 @@
                                           Unchecked="CheckboxStatsInWindow_Unchecked" />
                     <Button Content="检查重复的匹配" Margin="10" Click="ButtonCheckForDuplicateMatches_OnClick"/>
 
-                    <Button Content="check for wrong opp. classes/names" Margin="10,5,10,0" Click="ButtonCheckOppClassName_OnClick"/>
+                    <Button Content="检查错误的对手信息(英雄/名字)" Margin="10,5,10,0" Click="ButtonCheckOppClassName_OnClick"/>
                 </StackPanel>
             </ScrollViewer>
         </GroupBox>
