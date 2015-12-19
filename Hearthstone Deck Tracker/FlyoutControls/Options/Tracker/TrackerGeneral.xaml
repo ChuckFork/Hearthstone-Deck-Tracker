@@ -18,11 +18,11 @@
                                           Checked="CheckboxAutoSelectDeck_Checked"
                                           Unchecked="CheckboxAutoSelectDeck_Unchecked" />
                     <CheckBox x:Name="CheckboxSpectatorUseNoDeck"
-                                          Content="Use no deck on Spectator mode" HorizontalAlignment="Left"
+                                          Content="围观模式下，不使用卡组" HorizontalAlignment="Left"
                                           Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxSpectatorUseNoDeck_Checked"
                                           Unchecked="CheckboxSpectatorUseNoDeck_Unchecked" />
-                    <CheckBox x:Name="CheckboxFlashHs" Content="Flash Hearthstone on turn start"                                          HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
+                    <CheckBox x:Name="CheckboxFlashHs" Content="回合开始时，炉石传说在任务栏闪动"                                          HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"
                                           Checked="CheckboxFlashHs_Checked"
                                           Unchecked="CheckboxFlashHs_Unchecked" />
                     <CheckBox x:Name="CheckboxBringHsToForegorund"
