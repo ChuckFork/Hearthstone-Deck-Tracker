@@ -44,7 +44,7 @@ namespace Hearthstone_Deck_Tracker.Controls.DeckPicker
 													? FontWeights.Bold
 													: (Core.MainWindow.DeckPickerList.SelectedDecks.Contains(Deck) ? FontWeights.SemiBold : FontWeights.Regular);
 
-		public string TextUseButton => Deck.Equals(DeckList.Instance.ActiveDeck) ? "ACTIVE" : "USE";
+		public string TextUseButton => Deck.Equals(DeckList.Instance.ActiveDeck) ? "正在使用" : "使用";
 
 		public event PropertyChangedEventHandler PropertyChanged;
 

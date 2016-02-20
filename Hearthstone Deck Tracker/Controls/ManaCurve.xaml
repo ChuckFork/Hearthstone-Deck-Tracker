@@ -22,7 +22,7 @@
                             </Style.Triggers>
                         </Style>
                     </Grid.Style>
-                    <TextBlock Name="TextBlockManaCurveMechanics" Text="MECHANICS" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14"
+                    <TextBlock Name="TextBlockManaCurveMechanics" Text="卡牌构成" Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14"
                            FontWeight="SemiBold"/>
                 </Grid>
             </Border>
